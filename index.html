@@ -365,11 +365,43 @@
                     </li>
                 </ul>
             </div>
+            <div>
+                <h5>ZAPISZ SIĘ DO NEWSLETTERA</h5>
+                <form>
+                    <input type="email" placeholder="E-mail" class="footer-input">
+                    <button type="submit" class="footer-input-button">Zapisz się
+                        <svg width="20px" height="20px" class="footer-input-button-icon">
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
     </footer>
+    <!-- MODAL -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-button" data-modal-close>X</button>
+        <form>
+            <h3>Zostaw swoje dane w formularzu poniżej</h3>
+            <label>
+                <div>Imie</div>
+                <input type="text" name="name" />
+            </label>
+            <label>
+                <div>Telefon</div>
+                <input type="tel" name="tel" />
+            </label>
+            <label>
+                <div>Email</div>
+                <input type="email" name="email" />
+            </label>
+            <label>
+                <div>Komentarz</div>
+                <textarea name="comment" placeholder="Wprowadź tekst"></textarea>
+            </label>
+            <button type="submit">Submit</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
