@@ -316,7 +316,6 @@
                         <use href="./images/icons.svg#icon-logo6"></use>
                     </svg>
                 </li>
-
             </ul>
         </div>
     </section>
@@ -365,14 +364,16 @@
                     </li>
                 </ul>
             </div>
-            <div>
+            <div class="e-mail-input">
                 <h5>ZAPISZ SIĘ DO NEWSLETTERA</h5>
                 <form>
-                    <input type="email" placeholder="E-mail" class="footer-input">
-                    <button type="submit" class="footer-input-button">Zapisz się
+                    <input type="email" placeholder="E-mail" class="footer-input" />
+                    <button type="submit" class="footer-input-button">
+                        <div class="footer-input-button-inside">Zapisz się
                         <svg width="20px" height="20px" class="footer-input-button-icon">
                             <use href="./images/icons.svg#icon-send"></use>
                         </svg>
+                        </div>
                     </button>
                 </form>
             </div>
@@ -382,8 +383,8 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-button" data-modal-close>X</button>
-        <form>
-            <h3>Zostaw swoje dane w formularzu poniżej</h3>
+        <form class="modal-form">
+            <h3 class="modal-form-title">Zostaw swoje dane w formularzu poniżej</h3>
             <label>
                 <div>Imie</div>
                 <input type="text" name="name" />
@@ -400,7 +401,10 @@
                 <div>Komentarz</div>
                 <textarea name="comment" placeholder="Wprowadź tekst"></textarea>
             </label>
-            <button type="submit">Submit</button>
+            <label>
+                <input type="checkbox" name="statute-checkbox" /> Oświadczam iż akceptuję <a class="checkbox-statute-links" href="">Regulamin</a> i <a class="checkbox-statute-links" href="">Politykę Prywatności.</a>
+            </label>
+            <button type="submit">Wyślij</button>
         </form>
       </div>
     </div>

@@ -425,6 +425,47 @@ h5 {
 .footer-container {
   display: flex;
 }
+.e-mail-input {
+  margin-left: 78px;
+}
+.footer-input {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-input-button {
+  font-family: Roboto;
+  color: #ffffff;
+  background-color: #2196f3;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.footer-input-button-icon {
+  fill: #ffffff;
+  margin-left: 24px;
+}
+.footer-input-button-inside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* PORTFOLIO */
 
 .button2 {
@@ -572,19 +613,4 @@ h5 {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-}
-.footer-input-button {
-  font-family: Roboto;
-  color: #ffffff;
-  background-color: #2196f3;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
-  text-align: center;
-  width: 200px;
-  height: 50px;
-  margin: 0 auto;
-}
-.footer-input-button-icon {
-  fill: #ffffff;
 }
