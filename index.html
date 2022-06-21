@@ -385,41 +385,46 @@
         <button type="button" class="close-button" data-modal-close>X</button>
         <form class="modal-form">
             <h3 class="modal-form-title">Zostaw swoje dane w formularzu poniżej</h3>
-            <label>
+            <label for="first-name">
                 <div class="modal-input-box">
                 <div class="modal-form-input-title">Imie</div>
-                <input type="text" name="first-name" class="modal-input" />
+                <input id="first-name" type="text" name="first-name" class="modal-input" required/>
                 <svg width="18px" height="18px" class="modal-form-icon">
                     <use href="./images/icons.svg#icon-person"></use>
                 </svg>
                 </div>
             </label>
-            <label>
+            <label for="telephone-number">
                 <div class="modal-input-box">
                 <div class="modal-form-input-title">Telefon</div>
-                <input type="tel" name="tel" class="modal-input"/>
+                <input id="telephone-number" type="tel" name="tel" class="modal-input" required/>
                 <svg width="18px" height="18px" class="modal-form-icon">
                     <use href="./images/icons.svg#icon-phone"></use>
                 </svg>
                 </div>
             </label>
-            <label>
+            <label for="email">
                 <div class="modal-input-box">
                 <div class="modal-form-input-title">Email</div>
-                <input type="email" name="email" class="modal-input"/>
+                <input id="email" type="email" name="email" class="modal-input" required/>
                 <svg width="18px" height="18px" class="modal-form-icon">
                     <use href="./images/icons.svg#icon-email"></use>
                 </svg>
                 </div>
             </label>
-            <label>
+            <label for="comment">
                 <div class="modal-form-input-title">Komentarz</div>
-                <textarea name="comment" placeholder="Wprowadź tekst" class="modal-textarea"></textarea>
+                <textarea id="comment" name="comment" placeholder="Wprowadź tekst" class="modal-textarea"></textarea>
             </label>
-            <label>
-                <input type="checkbox" name="statute-checkbox" /> Oświadczam iż akceptuję <a class="checkbox-statute-links" href="">Regulamin</a> i <a class="checkbox-statute-links" href="">Politykę Prywatności.</a>
+            <div class="modal-terms">
+            <input type="checkbox" name="statute-checkbox" id="user-policy" class="modal-form-policy visually-hidden" required/> 
+            <label for="user-policy" class="modal-form-policy-text">
+            <span>Oświadczam iż akceptuję <a class="checkbox-statute-links" href="">Regulamin</a> i <a class="checkbox-statute-links" href="">Politykę Prywatności.</a></span>
             </label>
+            </div>
+            <div class="modal-submit">
             <button type="submit" class="modal-form-button">Wyślij</button>
+            </div>
         </form>
       </div>
     </div>
